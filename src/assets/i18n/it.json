@@ -63,9 +63,9 @@
     "WELCOME": "Benvenuto a bordo"
   },
   "SIGN_IN_PAGE": {
-    "ARK_WALLET": "CMT  Wallet",
+    "ARK_WALLET": "",
     "CREATE_PROFILE": "Crea un profilo",
-    "SLOGAN": "Benvenuto nel mondo CMT "
+    "SLOGAN": ""
   },
   "SIGN_OUT_PROFILE_TEXT": "Uscire dal Profilo?",
   "MARKETS_PAGE": {

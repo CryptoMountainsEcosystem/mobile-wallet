@@ -11,11 +11,16 @@
 
 </ion-header>
 
-<ion-content>
-  <ion-grid padding>
+<ion-content class="column-mode">
+  <ion-grid>
+    <ion-row justify-content-center align-items-end>
+      <ion-col padding text-center>
+        <p class="sole-message">{{ 'TRANSACTIONS_PAGE.QRCODE_COPY' | translate }}</p>
+      </ion-col>
+    </ion-row>
     <ion-row>
       <ion-col text-center>
-        <p class="sole-message">{{ 'TRANSACTIONS_PAGE.QRCODE_COPY' | translate }}</p>
+        <ark-qr-code [address]="address" [size]="140"></ark-qr-code>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -23,11 +28,5 @@
         <button ion-button clear small color="primary" (click)="copyAddress()" class="button-address">{{ address }}</button>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col text-center>
-        <ark-qr-code [address]="address" [amount]="amount ? amount : null" [size]="140"></ark-qr-code>
-      </ion-col>
-    </ion-row>
-    <amount (onChange)="amount = $event.amount"></amount>
   </ion-grid>
 </ion-content>

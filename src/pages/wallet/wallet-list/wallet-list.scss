@@ -2,7 +2,7 @@ page-wallet-list {
 
   .content {
     &.normal {
-      background: linear-gradient(0deg, rgba(0,0,0,0) 0%, transparentize(color($colors, wallet-normal-gradient, base), 0.80) 70%, color($colors, wallet-normal-gradient, base) 100%);
+      background: linear-gradient(0deg, rgba(0,0,0,0) 0%, transparentize(color($colors, wallet-delegate-gradient, base), 0.80) 70%, color($colors, wallet-delegate-gradient, base) 100%);
     }
 
     &.delegate {

@@ -18,7 +18,7 @@ export class AmountComponent implements OnInit {
   @Output()
   public onChange: EventEmitter<Amount> = new EventEmitter();
 
-  public tokenPlaceholder = 100;
+  public tokenPlaceholder = 0;
   public fiatPlaceholder: number;
   public amount: number;
   public amountEquivalent: number;

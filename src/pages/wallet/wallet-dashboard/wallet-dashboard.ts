@@ -238,8 +238,6 @@ export class WalletDashboardPage implements OnInit, OnDestroy {
     this.navCtrl.push('TransactionShowPage', {
       transaction: tx,
       symbol: this.network.symbol,
-      equivalentAmount: tx.getAmountEquivalent(this.marketCurrency, this.marketHistory),
-      equivalentSymbol: this.marketCurrency.symbol,
     });
   }
 

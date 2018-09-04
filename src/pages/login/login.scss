@@ -1,9 +1,9 @@
 page-login {
   ion-content {
     background: url('../assets/img/light/login/login-pattern.png') repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat:no-repeat;
-    background-position: top center;
+   
 
     .image-container {
       overflow: hidden;

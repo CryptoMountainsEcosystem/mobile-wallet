@@ -32,7 +32,7 @@ export const TOAST_HIDE_DELAY = 3000;
 export const TOAST_POSITION = 'bottom';
 
 // COIN MARKETCAP API
-export const API_MARKET_URL = 'https://min-api.cryptocompare.com';
+export const API_MARKET_URL = '';
 
 // GENERIC
 export const VIBRATION_TIME_MS = 30;

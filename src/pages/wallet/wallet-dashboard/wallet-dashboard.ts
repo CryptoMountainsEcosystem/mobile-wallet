@@ -106,21 +106,11 @@ export class WalletDashboardPage implements OnInit, OnDestroy {
     this.translateService.get([
       'WALLETS_PAGE.LABEL',
       'DELEGATES_PAGE.DELEGATES',
-      'DELEGATES_PAGE.REGISTER_DELEGATE',
       'WALLETS_PAGE.SECOND_PASSPHRASE',
       'SETTINGS_PAGE.WALLET_BACKUP',
       'WALLETS_PAGE.REMOVE_WALLET',
       'WALLETS_PAGE.CONVERT_TO_FULL_WALLET'
     ]).takeUntil(this.unsubscriber$).subscribe((translation) => {
-      const delegateItem =  {
-        text: translation['DELEGATES_PAGE.REGISTER_DELEGATE'],
-        role: 'delegate',
-        icon: !this.platform.is('ios') ? 'ios-contact-outline' : '',
-        handler: () => {
-          this.presentRegisterDelegateModal();
-        },
-      };
-
       const delegatesItem = {
           text: translation['DELEGATES_PAGE.DELEGATES'],
           role: 'label',
@@ -165,7 +155,6 @@ export class WalletDashboardPage implements OnInit, OnDestroy {
       // DEPRECATED:
       // if (!this.wallet.isWatchOnly && !this.wallet.secondSignature) buttons.unshift(secondPassphraseItem);
       if (!this.wallet.isWatchOnly) { buttons.unshift(delegatesItem); } // "Watch Only" address can't vote
-      if (!this.wallet.isWatchOnly && !this.wallet.isDelegate) { buttons.unshift(delegateItem); }
       if (!this.wallet.isWatchOnly) { buttons.splice(buttons.length - 1, 0, backupItem); }
 
       if (this.wallet.isWatchOnly) {

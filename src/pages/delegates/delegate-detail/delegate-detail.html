@@ -40,22 +40,6 @@
             </h4>
           </ion-label>
         </ion-item>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</ion-content>
+      </ion-col>  
 
-<ion-footer class="no-padding" no-shadow no-border>
-  <ion-grid class="no-padding">
-    <ion-row *ngIf="isWalletSelected()">
-      <ion-col text-center padding>
-        <button ion-button (click)="submit()" color="primary" [disabled]="!isWalletSelected()" class="button-continue">{{ (isSameDelegate() ? 'DELEGATES_PAGE.UNVOTE' : 'DELEGATES_PAGE.VOTE') | translate }} ({{ currentNetwork?.symbol }}{{ fees?.vote | unitsSatoshi }})</button>
-      </ion-col>
-    </ion-row>
-    <ion-row *ngIf="!isWalletSelected()" class="note-toolbar">
-      <ion-col text-center>
-        {{ 'DELEGATES_PAGE.WARNING_SELECT_WALLET_FIRST' | translate }}
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</ion-footer>
+

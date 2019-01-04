@@ -1,15 +1,7 @@
-
-[![Build Status](https://travis-ci.org/CMTEcosystem/CMT-mobile.svg?branch=master)](https://travis-ci.org/CMTEcosystem/CMT-mobile)
-
 # CMT Mobile
 > A Wallet for Everyone
 
 CMT’s mobile wallet is a hybrid application (using the same codebase for Android and iOS which helps with coordinated development). Created using Ionic framework and CMT’s [TypeScript API](https://github.com/CMTEcosystem/CMT-ts) to interact with the CMT network via your mobile phone, anytime, anywhere (as long as you have an internet connection).
-
-## Download
-
-- [Google Play](https://play.google.com/store/apps/details?id=io.CMT.wallet.mobile)
-- [App Store](https://itunes.apple.com/us/app/mobile-CMT/id1324625967)
 
 ## Features
 
@@ -73,17 +65,9 @@ To run the E2E (end to end) tests:
 $ npm run test:e2e
 ```
 
-## Contributing
-
-- If you find any bugs, submit an [issue](../../issues) or open [pull-request](../../pulls), helping us catch and fix them.
-- Engage with other users and developers on [CMT Slack](https://CMT.io/slack/).
-- Join to our [gitter](https://gitter.im/CMT-developers/Lobby).
-- [Contribute bounties](./CONTRIBUTING.md).
-- [Help translate](./TRANSLATING.md).
-
 ## Authors
-- Lúcio Rubens <lucio@CMT.io>
-- Alex Barnsley <alex@CMT.io>
+
+- Lorenzo Caruso <lorenzo.caruso@outlook.com>
 
 ## License
 
